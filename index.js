@@ -1,13 +1,5 @@
 const { nextISSTimesForMyLocation } = require('./iss');
 
-
-// nextISSTimesForMyLocation((error, passTimes) => {
-//   if (error) {
-//     return console.log("It didn't work!", error);
-//   }
-//   console.log(passTimes);
-// });
-
 const printPassTimes = function (passTimes) {
   for (const pass of passTimes) {
     const datetime = new Date(0);
